@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6435478888342568709}
   - component: {fileID: 2048382361801730620}
   m_Layer: 0
-  m_Name: "Ca\xF1on"
+  m_Name: Canon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 7961629605585636012}
   - component: {fileID: 4880929707583437612}
   m_Layer: 0
-  m_Name: Tanque
+  m_Name: Tank
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -204,7 +204,7 @@ GameObject:
   - component: {fileID: 6982048293798955784}
   - component: {fileID: 2135820949618737869}
   m_Layer: 0
-  m_Name: "Ca\xF1on"
+  m_Name: Canon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -297,7 +297,7 @@ GameObject:
   - component: {fileID: 7177946412887028112}
   - component: {fileID: 8016081815258903947}
   m_Layer: 0
-  m_Name: RuedasIzquierdas
+  m_Name: LWheelChain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -376,7 +376,7 @@ GameObject:
   - component: {fileID: 2439639745918719244}
   - component: {fileID: 3505816800301853117}
   m_Layer: 0
-  m_Name: RuedasDerechas
+  m_Name: RWheelChain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
