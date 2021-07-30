@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
+    public bool cameraIsSelected;
     public Transform lookAtThat;
 
     [SerializeField] [Range(1, 3.5f)] public float verticalDistance;
@@ -23,8 +24,11 @@ public class CameraController : MonoBehaviour
     {
     }
     void LateUpdate()
-    {        
-        MoveCameraToFolowTarget();
+    {
+        if (!cameraIsSelected)
+        {
+            MoveCameraToFolowTarget();
+        }
 
         if (this.transform.rotation.x > 70 || this.transform.rotation.y < 75 || this.transform.rotation.y > 103)
         {
