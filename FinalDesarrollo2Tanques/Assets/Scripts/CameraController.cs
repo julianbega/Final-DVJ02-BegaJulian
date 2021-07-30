@@ -7,7 +7,7 @@ public class CameraController : MonoBehaviour
 {
     public Transform lookAtThat;
 
-    [SerializeField] [Range(1, 10)] public float verticalDistance;
+    [SerializeField] [Range(1, 3.5f)] public float verticalDistance;
     [SerializeField] [Range(2, 8)] public float horizontalDistanceX;
     [SerializeField] [Range(-3, 3)] public float horizontalDistanceZ;
     private Vector3 zoom;
@@ -33,7 +33,6 @@ public class CameraController : MonoBehaviour
     }
     public void LookAtPlayer()
     {
-        Debug.Log("look at player");
         transform.LookAt(lookAtThat.transform);
     }
     public void MoveCameraToFolowTarget()
