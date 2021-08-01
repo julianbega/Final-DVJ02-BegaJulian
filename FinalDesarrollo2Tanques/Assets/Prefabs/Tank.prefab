@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7573824049410464565}
   - component: {fileID: 263324772125925225}
   - component: {fileID: 1984160222058247426}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cylinder (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 4145309629536025255}
   - component: {fileID: 4115891322618927213}
   - component: {fileID: 6566032904537465061}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Tank (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -169,7 +169,7 @@ GameObject:
   - component: {fileID: 5363775247077668374}
   - component: {fileID: 8675916073362024531}
   - component: {fileID: 1201079490713090859}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Tank (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -248,7 +248,7 @@ GameObject:
   - component: {fileID: 5850972709002530724}
   - component: {fileID: 2686641916284416244}
   - component: {fileID: 7322448083871238212}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -327,7 +327,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7428011754960779542}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: WHEELS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -367,7 +367,7 @@ GameObject:
   - component: {fileID: 5079524738149707435}
   - component: {fileID: 3041544465182138017}
   - component: {fileID: 3581098551754973955}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Tank (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -446,7 +446,7 @@ GameObject:
   - component: {fileID: 6369872931924868516}
   - component: {fileID: 8995934696519227486}
   - component: {fileID: 4792432269440244456}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Tank (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -526,7 +526,7 @@ GameObject:
   - component: {fileID: 3638249637755836604}
   - component: {fileID: 7910230670805295327}
   - component: {fileID: 6330726836764116091}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -618,7 +618,7 @@ GameObject:
   - component: {fileID: 1615760700890643589}
   - component: {fileID: 5744718068914374076}
   - component: {fileID: 7808706804629912365}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Tank (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -697,7 +697,7 @@ GameObject:
   - component: {fileID: 624698115224424765}
   - component: {fileID: 2155894051965250469}
   - component: {fileID: 1639374871973615134}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Tank (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -776,7 +776,7 @@ GameObject:
   - component: {fileID: 3279243261472298722}
   - component: {fileID: 6457646690302342626}
   - component: {fileID: 6412642074295372614}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Tank (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -855,7 +855,7 @@ GameObject:
   - component: {fileID: 3693994167999417796}
   - component: {fileID: 4472694286158915541}
   - component: {fileID: 3253385547812153062}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Tank (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -936,7 +936,7 @@ GameObject:
   - component: {fileID: 2996572766782933505}
   - component: {fileID: 1034544587880683390}
   - component: {fileID: 5640183395872721889}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Tank (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1017,7 +1017,7 @@ GameObject:
   - component: {fileID: 7914433775435837697}
   - component: {fileID: 2961170881802252021}
   - component: {fileID: 2388258301573369241}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1096,7 +1096,7 @@ GameObject:
   - component: {fileID: 1148949348446483677}
   - component: {fileID: 7584485699284486160}
   - component: {fileID: 2668951054852549623}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Tank
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1176,7 +1176,7 @@ GameObject:
   - component: {fileID: 2002972670760725896}
   - component: {fileID: 3029617855935754015}
   - component: {fileID: 2944435160504085203}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Tank (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1257,7 +1257,7 @@ GameObject:
   - component: {fileID: 4659883500923278234}
   - component: {fileID: 2965575528995049861}
   - component: {fileID: 2395858093924870912}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Shooting point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1336,7 +1336,7 @@ GameObject:
   - component: {fileID: 4368847241141293845}
   - component: {fileID: 1546444621952548062}
   - component: {fileID: 200352080232043729}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cylinder (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1415,7 +1415,7 @@ GameObject:
   - component: {fileID: 7883631860486427879}
   - component: {fileID: 8754542719070938618}
   - component: {fileID: 160029783990730609}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Tank (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1494,7 +1494,7 @@ GameObject:
   - component: {fileID: 7925854137212492380}
   - component: {fileID: 7077892427673701712}
   - component: {fileID: 4240208591647296642}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cylinder (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1573,7 +1573,7 @@ GameObject:
   - component: {fileID: 5931458338754729662}
   - component: {fileID: 1962315633013361347}
   - component: {fileID: 3953840267705129029}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Tank (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1654,7 +1654,7 @@ GameObject:
   - component: {fileID: 5477013409351452657}
   - component: {fileID: 7198828754832117940}
   - component: {fileID: 6083233244173432660}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cylinder (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1733,7 +1733,7 @@ GameObject:
   - component: {fileID: 2201232089200360384}
   - component: {fileID: 1190007015577036926}
   - component: {fileID: 2235570869132401543}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Tank (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1814,7 +1814,7 @@ GameObject:
   - component: {fileID: 1674450714843277885}
   - component: {fileID: 6779062769732716655}
   - component: {fileID: 8859642239882143948}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Tank (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1893,7 +1893,7 @@ GameObject:
   - component: {fileID: 4925534383118391275}
   - component: {fileID: 5747332011860645198}
   - component: {fileID: 104539249361337326}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Tank (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1975,7 +1975,7 @@ GameObject:
   - component: {fileID: 6953431381607785889}
   - component: {fileID: 5667141840955104911}
   - component: {fileID: 2155628001116130831}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cylinder (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2054,7 +2054,7 @@ GameObject:
   - component: {fileID: 415137936558487272}
   - component: {fileID: 4330159707187019137}
   - component: {fileID: 3217992832893998117}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2134,7 +2134,7 @@ GameObject:
   - component: {fileID: 3205517706650118092}
   - component: {fileID: 5455097146784881297}
   - component: {fileID: 3433019848936206306}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cylinder (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2213,7 +2213,7 @@ GameObject:
   - component: {fileID: 8086992625484587522}
   - component: {fileID: 1053003498724510482}
   - component: {fileID: 5083594909088141827}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cylinder (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2292,7 +2292,7 @@ GameObject:
   - component: {fileID: 8147751066569101980}
   - component: {fileID: 8419385843800212966}
   - component: {fileID: 5359241322706358259}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Tank (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2371,7 +2371,7 @@ GameObject:
   - component: {fileID: 6714724287356521488}
   - component: {fileID: 2456252051466060113}
   - component: {fileID: 4039001542678922205}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cylinder (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2450,7 +2450,7 @@ GameObject:
   - component: {fileID: 9094681479683850210}
   - component: {fileID: 6909039003471384197}
   - component: {fileID: 9016600632295643369}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Tank (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2529,7 +2529,7 @@ GameObject:
   - component: {fileID: 1889619971996881425}
   - component: {fileID: 4480831720006218239}
   - component: {fileID: 2996699262547832355}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Tank (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2610,7 +2610,7 @@ GameObject:
   - component: {fileID: 5466820208311689179}
   - component: {fileID: 8977074745662764203}
   - component: {fileID: 1323596046872176768}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Tank (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2691,7 +2691,7 @@ GameObject:
   - component: {fileID: 2755895102097848702}
   - component: {fileID: 8319922002565965566}
   - component: {fileID: 5780000873081188186}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Tank (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2772,7 +2772,7 @@ GameObject:
   - component: {fileID: 654402849041121515}
   - component: {fileID: 5490903562001147038}
   - component: {fileID: 4252764010951936774}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Tank (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2851,7 +2851,7 @@ GameObject:
   - component: {fileID: 5042307359787092575}
   - component: {fileID: 4621033238180230528}
   - component: {fileID: 4183011773901528679}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2930,7 +2930,7 @@ GameObject:
   - component: {fileID: 49407247675151755}
   - component: {fileID: 6115514431728304225}
   - component: {fileID: 1557911708565693124}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Tank (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3011,7 +3011,7 @@ GameObject:
   - component: {fileID: 1431939206508140748}
   - component: {fileID: 5091139777581261048}
   - component: {fileID: 3533603085575636637}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Tank (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3090,7 +3090,7 @@ GameObject:
   - component: {fileID: 4455418133218920000}
   - component: {fileID: 9081311582560809245}
   - component: {fileID: 7384645807874308533}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cylinder (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3169,7 +3169,7 @@ GameObject:
   - component: {fileID: 6421655388795491645}
   - component: {fileID: 6778985131920156296}
   - component: {fileID: 4474365366741012571}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3248,7 +3248,7 @@ GameObject:
   - component: {fileID: 6966870774029583787}
   - component: {fileID: 3259659341920976841}
   - component: {fileID: 3579897177539394247}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3327,7 +3327,7 @@ GameObject:
   - component: {fileID: 7169696830222666522}
   - component: {fileID: 7169696830222666520}
   - component: {fileID: 7169696830222666521}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Canon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3342,7 +3342,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7169696830222666523}
   m_LocalRotation: {x: 0.7066868, y: -0.02436766, z: 0.02436766, w: 0.7066868}
-  m_LocalPosition: {x: -0.08491722, y: 0.2796995, z: 1.229878}
+  m_LocalPosition: {x: 0, y: 0.2796995, z: 1.229878}
   m_LocalScale: {x: 0.13012296, y: 0.98682535, z: 0.62715423}
   m_Children:
   - {fileID: 6421655388795491645}
@@ -3414,7 +3414,7 @@ GameObject:
   - component: {fileID: 7169696830270990125}
   - component: {fileID: 7169696830270990131}
   - component: {fileID: 7169696830270990124}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Canon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3495,9 +3495,9 @@ GameObject:
   - component: {fileID: 7169696830800890278}
   - component: {fileID: 5403729133454298061}
   - component: {fileID: 4851448061025950380}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Tank
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3566,7 +3566,7 @@ GameObject:
   - component: {fileID: 2925758648253310331}
   - component: {fileID: 1000098057997366248}
   - component: {fileID: 8400267133665057831}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Tank (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3645,7 +3645,7 @@ GameObject:
   - component: {fileID: 8783486943778035793}
   - component: {fileID: 6457265359668780764}
   - component: {fileID: 4575048518316554381}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cylinder (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3725,7 +3725,7 @@ GameObject:
   - component: {fileID: 5433518917197169224}
   - component: {fileID: 7800697424941523297}
   - component: {fileID: 1370716727259920115}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3817,7 +3817,7 @@ GameObject:
   - component: {fileID: 1336964302050623364}
   - component: {fileID: 1955744793094016896}
   - component: {fileID: 256243167672824551}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Canon (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3896,7 +3896,7 @@ GameObject:
   - component: {fileID: 3044164856385024247}
   - component: {fileID: 7242904896133712423}
   - component: {fileID: 3589312746892942123}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Tank (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3977,7 +3977,7 @@ GameObject:
   - component: {fileID: 3265670311155654358}
   - component: {fileID: 937537942781732843}
   - component: {fileID: 642097543368430069}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Tank (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4056,7 +4056,7 @@ GameObject:
   - component: {fileID: 2330216180504930125}
   - component: {fileID: 4755536075163086496}
   - component: {fileID: 6403824886203566039}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cube (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4135,7 +4135,7 @@ GameObject:
   - component: {fileID: 2217002738126959059}
   - component: {fileID: 2748931053746072094}
   - component: {fileID: 2840483708547661685}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cylinder (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4214,7 +4214,7 @@ GameObject:
   - component: {fileID: 8129791779958248733}
   - component: {fileID: 7016007293731405035}
   - component: {fileID: 8234843295983951025}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cylinder (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4293,7 +4293,7 @@ GameObject:
   - component: {fileID: 1009449400822776854}
   - component: {fileID: 5217601622771622495}
   - component: {fileID: 3788902670990144791}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Tank (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4372,7 +4372,7 @@ GameObject:
   - component: {fileID: 4807535293425510566}
   - component: {fileID: 8530590774000783488}
   - component: {fileID: 6061465466992518727}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cylinder (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4451,7 +4451,7 @@ GameObject:
   - component: {fileID: 7903646889975642814}
   - component: {fileID: 8886743446723234469}
   - component: {fileID: 4172078207031670030}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Tank (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4532,7 +4532,7 @@ GameObject:
   - component: {fileID: 8596987262999088760}
   - component: {fileID: 1427765633633085096}
   - component: {fileID: 8497164784097657618}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cylinder (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
