@@ -37,7 +37,7 @@ public class CameraController : MonoBehaviour
     }
     public void LookAtPlayer()
     {
-        transform.LookAt(lookAtThat.transform);
+       // transform.LookAt(lookAtThat.transform);
     }
     public void MoveCameraToFolowTarget()
     {

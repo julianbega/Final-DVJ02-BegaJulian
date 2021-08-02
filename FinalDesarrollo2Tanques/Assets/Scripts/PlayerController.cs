@@ -22,15 +22,26 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         RaycastHit hitInfo;
-        if (Physics.Raycast (transform.position, Vector3.down, out hitInfo))
+        if (Physics.Raycast(transform.position, Vector3.down, out hitInfo))
         {
-            transform.rotation = Quaternion.FromToRotation(Vector3.up, hitInfo.normal);
-            transform.position = new Vector3 (this.transform.position.x, hitInfo.point.y + height, this.transform.position.z);
-            Debug.Log(hitInfo.transform.tag);
+            // transform.Rotate(Quaternion.FromToRotation(Vector3.up, hitInfo.normal).x, input.RotationInput * Time.deltaTime * rotationSpeed, Quaternion.FromToRotation(Vector3.up, hitInfo.normal).z);
+            //transform.rotation = Quaternion.FromToRotation(Vector3.up, hitInfo.normal);
+            // transform.rotation = new Quaternion (Quaternion.FromToRotation(Vector3.up, hitInfo.normal).x,0,Quaternion.FromToRotation(Vector3.up, hitInfo.normal).z,Quaternion.FromToRotation(Vector3.up, hitInfo.normal).w);
+            //transform.Rotate(Quaternion.FromToRotation(Vector3.up, hitInfo.normal).x, input.RotationInput * Time.deltaTime * rotationSpeed, Quaternion.FromToRotation(Vector3.up, hitInfo.normal).w);
+            // Vector3 aux = Vector3.Slerp(hitInfo.normal, hitInfo.normal, Time.deltaTime * 10f);
+            //transform.rotation = new Quaternion(aux.x, aux.y, aux.z, transform.rotation.w);
+            transform.rotation = Quaternion.FromToRotation(transform.up, hitInfo.normal) * transform.rotation;
+
+            transform.position = new Vector3(this.transform.position.x, hitInfo.point.y + height, this.transform.position.z);
         }
+
 
         Vector3 wantedPos = transform.forward * input.ForwardInput * speed * Time.deltaTime;
         this.transform.position += new Vector3(wantedPos.x, 0, wantedPos.z);
+
+        transform.Rotate(0.0f, input.RotationInput* Time.deltaTime * rotationSpeed, 0.0f);
+        // transform.rotation = Quaternion.Slerp(transform.rotation, new Quaternion(transform.rotation.x, input.RotationInput * Time.deltaTime * rotationSpeed, transform.rotation.z, transform.rotation.w), 1);
+
     }
 
     protected virtual void HandleMovement()
