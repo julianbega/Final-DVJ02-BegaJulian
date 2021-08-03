@@ -17,6 +17,7 @@ public class UIManager : MonoBehaviour
 
     //---------------- EndGame------------------
     public Image endGamePanel;
+    public TextMeshProUGUI endGameScore;
     public TextMeshProUGUI boxesDestroyed;
     public TextMeshProUGUI distanceTraveled;
 
@@ -31,7 +32,7 @@ public class UIManager : MonoBehaviour
     {
         if (manager != null)
         {
-            // score.text = "Score: " + player.score.ToString();
+            score.text = "Score: " + player.GetScore();
             time.text = "Game end in: " + manager.GetTimerMin() + " : " + (float)Mathf.Round(manager.GetTimerSec());
         }
 
@@ -46,6 +47,7 @@ public class UIManager : MonoBehaviour
         if (manager.GetEndGame())
         {
             endGamePanel.gameObject.SetActive(true);
+            endGameScore.text = "Score: " + player.GetScore();
             boxesDestroyed.text = "Boxes destroyed: " + player.GetBoxesDestroyed();
             distanceTraveled.text = "Distance traveled: " + player.GetDistanceTraveled();
         }
