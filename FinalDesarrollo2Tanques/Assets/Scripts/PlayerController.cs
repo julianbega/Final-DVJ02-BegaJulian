@@ -107,7 +107,7 @@ public class PlayerController : MonoBehaviour
             canonIsRotating = true;
             yield return new WaitForEndOfFrame();
         }
-
+        shoot();
         canonIsRotating = false;
         yield return null;
     }
