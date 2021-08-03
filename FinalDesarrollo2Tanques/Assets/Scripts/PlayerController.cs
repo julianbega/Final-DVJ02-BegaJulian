@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
 {
     private Terrain terrain;
     private PlayerInputs input;
+    private PlayerManager manager;
     [Header("Player speeds")]
     public float speed;
     public float rotationSpeed;
@@ -24,6 +25,7 @@ public class PlayerController : MonoBehaviour
     {
         rotatingCanon = false;
         input = GetComponent<PlayerInputs>();
+        manager = GetComponent<PlayerManager>();
     }
 
     void Update()
@@ -47,6 +49,10 @@ public class PlayerController : MonoBehaviour
 
         Vector3 wantedPos = transform.forward * input.ForwardInput * speed * Time.deltaTime;
         this.transform.position += new Vector3(wantedPos.x, 0, wantedPos.z);
+        if (input.ForwardInput != 0)
+        {
+            manager.SetDistanceTraveled(manager.GetDistanceTraveled() + (Time.deltaTime * speed));
+        }
 
         transform.Rotate(0.0f, input.RotationInput* Time.deltaTime * rotationSpeed, 0.0f);
         // transform.rotation = Quaternion.Slerp(transform.rotation, new Quaternion(transform.rotation.x, input.RotationInput * Time.deltaTime * rotationSpeed, transform.rotation.z, transform.rotation.w), 1);

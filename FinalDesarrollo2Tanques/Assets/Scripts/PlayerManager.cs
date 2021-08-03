@@ -51,5 +51,9 @@ public class PlayerManager : MonoBehaviour
     {
         score += pointsPerBoxDestroyed;
     }
+    public void SetDistanceTraveled(float distance)
+    {
+        distanceTraveled = distance;
+    }
 
 }

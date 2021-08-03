@@ -50,7 +50,7 @@ public class UIManager : MonoBehaviour
             endGamePanel.gameObject.SetActive(true);
             endGameScore.text = "Score: " + player.GetScore();
             boxesDestroyed.text = "Boxes destroyed: " + player.GetBoxesDestroyed();
-            distanceTraveled.text = "Distance traveled: " + player.GetDistanceTraveled();
+            distanceTraveled.text = "Distance traveled: " + player.GetDistanceTraveled() + " M";
         }
     }
 }
