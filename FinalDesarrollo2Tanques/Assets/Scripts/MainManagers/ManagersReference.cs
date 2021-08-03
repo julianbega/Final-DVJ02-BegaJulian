@@ -51,5 +51,9 @@ public class ManagersReference : MonoBehaviour
     {
         referenceSceneManager.OnClickQuit();
     }
+    public void RestartGame()
+    {
+        referenceManager.SetEndGame(true);
+    }
 
 }
