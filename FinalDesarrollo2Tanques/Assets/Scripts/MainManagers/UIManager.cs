@@ -1,18 +1,27 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class UIManager : MonoBehaviour
 {
-    private PlayerManager player = null;
+    private GameManager manager = null;
+
+    //---------------- HUD------------------
+    public TextMeshProUGUI score;
+    public TextMeshProUGUI time;
     void Start()
     {
-        player = FindObjectOfType<PlayerManager>();
+        manager = FindObjectOfType<GameManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (manager != null)
+        {
+           // score.text = "Score: " + manager.score.ToString();
+            time.text = "Game end in: " + manager.GetTimerMin() + " : " + (float)Mathf.Round(manager.GetTimerSec());
+        }
     }
 }

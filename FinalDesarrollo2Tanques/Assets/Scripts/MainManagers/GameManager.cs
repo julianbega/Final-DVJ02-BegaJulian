@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    [Header("Tiempo de juego")]
+    public float minutes;
+    [Range(0f, 59f)] public float seconds;
 
     public static GameManager instanceGameManager;
     public static GameManager Instance { get { return instanceGameManager; } }
 
-    public PlayerManager actualPlayer;
+    private bool endGame;
+    //public PlayerManager actualPlayer;
     private void Awake()
     {
         if (instanceGameManager != null && instanceGameManager != this)
@@ -22,11 +26,25 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
+        endGame = false;
         DontDestroyOnLoad(this.gameObject);
     }
     void Update()
     {
-        
+        seconds -= Time.deltaTime;
+        if (seconds <= 0)
+        {
+            seconds = 60;
+            if (minutes >= 1)
+            {
+                minutes--;
+            }
+            else
+            {
+                endGame = true;
+                Pause();
+            }
+        }
     }
 
     public void Pause()
@@ -39,5 +57,14 @@ public class GameManager : MonoBehaviour
         {
             Time.timeScale = 1;
         }
+    }
+
+    public float GetTimerMin()
+    {
+        return minutes;
+    }
+    public float GetTimerSec()
+    {
+        return seconds;
     }
 }

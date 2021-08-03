@@ -848,6 +848,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 786a9040ff6d49b4ea19c28a0760bac3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  minutes: 2
+  seconds: 0
   actualPlayer: {fileID: 0}
 --- !u!4 &1110714784
 Transform:
