@@ -1,13 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class Bomb : MonoBehaviour
 {
     private Rigidbody rb;
     private TrailRenderer trail;
+    private bool isDead;
+
+    public static Action GivePoints;
+    public static Action AddBoxDestroyed;
+
     void Start()
     {
+        isDead = false;
         rb = FindObjectOfType<Rigidbody>();
         rb.AddForce(transform.forward*700);
     }
@@ -25,7 +32,13 @@ public class Bomb : MonoBehaviour
     {
         if (collision.transform.tag == "Box")
         {
+            if (!isDead)
+            { 
             Destroy(collision.gameObject);
+            AddBoxDestroyed?.Invoke();
+            GivePoints?.Invoke();
+            isDead = true;
+            }
         }
         Destroy(this.gameObject);
     }

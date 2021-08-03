@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour
         endGame = false;
         DontDestroyOnLoad(this.gameObject);
     }
+
     void Update()
     {
         seconds -= Time.deltaTime;
@@ -78,4 +79,5 @@ public class GameManager : MonoBehaviour
     {
         return endGame;
     }
+
 }

@@ -46,6 +46,7 @@ public class UIManager : MonoBehaviour
         }
         if (manager.GetEndGame())
         {
+            backgroundPanel.gameObject.SetActive(false);
             endGamePanel.gameObject.SetActive(true);
             endGameScore.text = "Score: " + player.GetScore();
             boxesDestroyed.text = "Boxes destroyed: " + player.GetBoxesDestroyed();
