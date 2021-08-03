@@ -10,6 +10,15 @@ public class UIManager : MonoBehaviour
     //---------------- HUD------------------
     public TextMeshProUGUI score;
     public TextMeshProUGUI time;
+
+    //---------------- Pause------------------
+   // public Button BackToMenu;
+   // public Button Resume;
+   // public Button Exit;
+    public Image backgroundPanel;
+   // public Image pausePanel;
+   // public TextMeshProUGUI pauseText;
+
     void Start()
     {
         manager = FindObjectOfType<GameManager>();
@@ -22,6 +31,15 @@ public class UIManager : MonoBehaviour
         {
            // score.text = "Score: " + manager.score.ToString();
             time.text = "Game end in: " + manager.GetTimerMin() + " : " + (float)Mathf.Round(manager.GetTimerSec());
+        }
+
+        if (manager.GetIsPaused() == true)
+        {
+            backgroundPanel.gameObject.SetActive(true);
+        }
+        else
+        {
+            backgroundPanel.gameObject.SetActive(false);
         }
     }
 }

@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get { return instanceGameManager; } }
 
     private bool endGame;
+    private bool isPaused;
     //public PlayerManager actualPlayer;
     private void Awake()
     {
@@ -52,10 +53,12 @@ public class GameManager : MonoBehaviour
         if (Time.timeScale == 1)
         {
             Time.timeScale = 0;
+            isPaused = true;
         }
         else
         {
             Time.timeScale = 1;
+            isPaused = false;
         }
     }
 
@@ -66,5 +69,9 @@ public class GameManager : MonoBehaviour
     public float GetTimerSec()
     {
         return seconds;
+    }
+    public bool GetIsPaused()
+    {
+        return isPaused;
     }
 }
