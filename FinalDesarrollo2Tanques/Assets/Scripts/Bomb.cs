@@ -40,6 +40,16 @@ public class Bomb : MonoBehaviour
             isDead = true;
             }
         }
+        if (collision.transform.tag == "Target")
+        {
+            if (!isDead)
+            {
+                Destroy(collision.gameObject);
+                AddBoxDestroyed?.Invoke();
+                GivePoints?.Invoke();
+                isDead = true;
+            }
+        }
         Destroy(this.gameObject);
     }
 }

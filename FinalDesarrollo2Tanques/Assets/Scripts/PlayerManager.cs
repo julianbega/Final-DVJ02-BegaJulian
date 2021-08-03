@@ -9,7 +9,7 @@ public class PlayerManager : MonoBehaviour
     private float score;
     private float boxesDestroyed;
     private float distanceTraveled;
-    public int pointsPerBoxDestroyed;
+    public int pointsPerEnemyDestroyed;
 
     void Start()
     {
@@ -20,15 +20,6 @@ public class PlayerManager : MonoBehaviour
     {
         Bomb.GivePoints -= UpdateScore;
         Bomb.AddBoxDestroyed -= UpdateBoxesDestroyed;
-    }
-
-    void Update()
-    {
-        
-    }
-    void FixedUpdate()
-    {
-
     }
 
     public float GetScore()
@@ -49,7 +40,7 @@ public class PlayerManager : MonoBehaviour
     }
     public void UpdateScore()
     {
-        score += pointsPerBoxDestroyed;
+        score += pointsPerEnemyDestroyed;
     }
     public void SetDistanceTraveled(float distance)
     {

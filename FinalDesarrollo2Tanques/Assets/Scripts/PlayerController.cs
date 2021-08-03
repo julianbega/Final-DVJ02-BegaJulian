@@ -101,13 +101,38 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator RotateCanon(Vector3 shootPos)
     {
-        while (Quaternion.LookRotation(shootPos) != Canon.transform.rotation)
+        bool alreadyShoot = false;
+        float maxTimeToShoot = 0;
+        while (Quaternion.LookRotation(shootPos) != Canon.transform.rotation  )
         {
+            maxTimeToShoot += Time.deltaTime;
+            #region fail test position to shoot
+            /*  
+           while (Canon.transform.rotation.x <= Quaternion.LookRotation(shootPos).x + 0.01 && Canon.transform.rotation.x >= Quaternion.LookRotation(shootPos).x - 0.01 &&
+          Canon.transform.rotation.y <= Quaternion.LookRotation(shootPos).y + 0.01 && Canon.transform.rotation.y >= Quaternion.LookRotation(shootPos).y - 0.01 &&
+          Canon.transform.rotation.z <= Quaternion.LookRotation(shootPos).z + 0.01 && Canon.transform.rotation.z >= Quaternion.LookRotation(shootPos).z - 0.01 &&
+          Canon.transform.rotation.w <= Quaternion.LookRotation(shootPos).w + 0.01 && Canon.transform.rotation.w >= Quaternion.LookRotation(shootPos).w - 0.01)
+           {*/
+            #endregion
             Canon.transform.rotation = Quaternion.Slerp(Canon.transform.rotation, Quaternion.LookRotation(shootPos), canonRotationSpeed * Time.deltaTime);
             canonIsRotating = true;
+
+            Debug.Log("time " + maxTimeToShoot);
+
+            if (maxTimeToShoot >= 4 && !alreadyShoot)
+            {
+                alreadyShoot = true;
+                shoot();
+                canonIsRotating = false;
+                yield return null;
+            }
             yield return new WaitForEndOfFrame();
         }
-        shoot();
+        if (!alreadyShoot)
+        {
+            alreadyShoot = true;
+            shoot();
+        }
         canonIsRotating = false;
         yield return null;
     }
