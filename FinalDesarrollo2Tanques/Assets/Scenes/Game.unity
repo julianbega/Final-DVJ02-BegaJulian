@@ -266,7 +266,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 507831503}
   m_LocalRotation: {x: -0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 1.353, z: -3.407}
+  m_LocalPosition: {x: -0, y: 0.49, z: -1.26}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4204492}
@@ -368,11 +368,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4411fba2f2795404389c11d4e8d1178a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraIsSelected: 1
   Player: {fileID: 4204491}
-  verticalDistance: 2.026
-  horizontalDistanceX: 4.85
-  horizontalDistanceZ: 0
+  verticalDistance: 1.5
+  zoomDistance: 3.5
   cameraSpeed: 10
   cameraConstraint: {fileID: 507831503}
 --- !u!1 &1108331472

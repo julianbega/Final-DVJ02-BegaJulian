@@ -5,17 +5,17 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    public bool cameraIsSelected;
     public GameObject Player;
 
-    [SerializeField] [Range(1, 3.5f)] public float verticalDistance;
-    [SerializeField] [Range(2, 8)] public float horizontalDistanceX;
-    [SerializeField] [Range(-3, 3)] public float horizontalDistanceZ;
-    private Vector3 zoom;
+    [SerializeField] [Range(1f, 5f)] public float verticalDistance;
+    [SerializeField] [Range(0, 7f)] public float zoomDistance;
     public float cameraSpeed;
     public GameObject cameraConstraint;
-    private Vector3 posToMoveTowards;
 
+    private void Start()
+    {
+        cameraConstraint.transform.position = new Vector3(cameraConstraint.transform.position.x - zoomDistance, cameraConstraint.transform.position.y + verticalDistance, cameraConstraint.transform.position.z);
+    }
     private void Update()
     {
         follow();

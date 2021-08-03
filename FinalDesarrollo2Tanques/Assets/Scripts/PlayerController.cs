@@ -31,8 +31,8 @@ public class PlayerController : MonoBehaviour
             //transform.Rotate(Quaternion.FromToRotation(Vector3.up, hitInfo.normal).x, input.RotationInput * Time.deltaTime * rotationSpeed, Quaternion.FromToRotation(Vector3.up, hitInfo.normal).w);
             // Vector3 aux = Vector3.Slerp(hitInfo.normal, hitInfo.normal, Time.deltaTime * 10f);
             //transform.rotation = new Quaternion(aux.x, aux.y, aux.z, transform.rotation.w);
-            #endregion
             // transform.rotation = Quaternion.FromToRotation(transform.up, hitInfo.normal) * transform.rotation;
+            #endregion
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.FromToRotation(transform.up, hitInfo.normal) * transform.rotation, 0.15f);
             transform.position = new Vector3(this.transform.position.x, hitInfo.point.y + height, this.transform.position.z);
         }
