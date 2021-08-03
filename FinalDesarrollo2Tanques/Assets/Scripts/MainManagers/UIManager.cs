@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class UIManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private PlayerManager player = null;
     void Start()
     {
-        
+        player = FindObjectOfType<PlayerManager>();
     }
 
     // Update is called once per frame

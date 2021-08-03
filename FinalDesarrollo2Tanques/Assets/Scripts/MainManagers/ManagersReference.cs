@@ -37,7 +37,7 @@ public class ManagersReference : MonoBehaviour
 
     public void GoToMenu()
     {
-        referenceSceneManager.ChangeScene("Menu");
+        referenceSceneManager.ChangeScene("MainMenu");
     }
     public void GoToGame()
     {
