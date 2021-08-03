@@ -74,7 +74,7 @@ public class PlayerController : MonoBehaviour
            
                 if (Mathf.Abs(direction.x) >= 1 && Mathf.Abs(direction.z) > 1)
                 {
-                    Canon.transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(direction), /*canonRotationSpeed * Time.deltaTime*/0.7f);
+                    Canon.transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(direction), canonRotationSpeed * Time.deltaTime);
                     shoot();
                 }
             

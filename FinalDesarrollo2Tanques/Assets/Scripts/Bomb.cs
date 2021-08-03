@@ -23,6 +23,10 @@ public class Bomb : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        if (collision.transform.tag == "Box")
+        {
+            Destroy(collision.gameObject);
+        }
         Destroy(this.gameObject);
     }
 }
