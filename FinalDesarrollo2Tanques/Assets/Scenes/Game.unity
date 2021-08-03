@@ -175,6 +175,8 @@ MonoBehaviour:
   height: 0.35
   rotatingCanon: 0
   Canon: {fileID: 1474676956}
+  Bomb: {fileID: 1820720800870721627, guid: 99137c953a48bfd429ce8f045af6c2ce, type: 3}
+  ShootingPoint: {fileID: 423624747}
 --- !u!1 &74069842
 GameObject:
   m_ObjectHideFlags: 0
@@ -245,6 +247,12 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!1 &423624747 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3816891617788703464, guid: 8d96b8fa046080a47b12845325d06d06,
+    type: 3}
+  m_PrefabInstance: {fileID: 1168588177}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &507831503
 GameObject:
   m_ObjectHideFlags: 0
