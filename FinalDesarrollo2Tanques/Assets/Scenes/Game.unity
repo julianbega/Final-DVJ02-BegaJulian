@@ -659,6 +659,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7530541025900591101, guid: 8d96b8fa046080a47b12845325d06d06,
+        type: 3}
+      propertyPath: m_Name
+      value: Canon Iris
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732970100664094122, guid: 8d96b8fa046080a47b12845325d06d06,
+        type: 3}
+      propertyPath: m_Name
+      value: Canon
+      objectReference: {fileID: 0}
     - target: {fileID: 7753617564769267569, guid: 8d96b8fa046080a47b12845325d06d06,
         type: 3}
       propertyPath: m_RootOrder

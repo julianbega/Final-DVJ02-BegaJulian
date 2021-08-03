@@ -18,6 +18,8 @@ public class PlayerController : MonoBehaviour
 
     [Header("GameObjects")]
     public GameObject Canon;
+    public GameObject Bomb;
+    public GameObject ShootingPoint;
     void Start()
     {
         rotatingCanon = false;
@@ -73,10 +75,16 @@ public class PlayerController : MonoBehaviour
                 if (Mathf.Abs(direction.x) >= 1 && Mathf.Abs(direction.z) > 1)
                 {
                     Canon.transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(direction), canonRotationSpeed * Time.deltaTime);
+                    shoot();
                 }
             
             Debug.Log(direction);
         }
         rotatingCanon = false;
+    }
+
+    private void shoot()
+    {
+        Instantiate(Bomb, ShootingPoint.transform.position, Canon.transform.rotation);
     }
 }
