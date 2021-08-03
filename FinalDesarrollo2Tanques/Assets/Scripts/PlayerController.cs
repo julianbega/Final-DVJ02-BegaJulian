@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     [Header("No tocar")]
     public float height;
     public bool rotatingCanon;
+    public bool canonIsRotating;
 
     [Header("GameObjects")]
     public GameObject Canon;
@@ -23,6 +24,7 @@ public class PlayerController : MonoBehaviour
     public GameObject ShootingPoint;
     void Start()
     {
+        canonIsRotating = false;
         rotatingCanon = false;
         input = GetComponent<PlayerInputs>();
         manager = GetComponent<PlayerManager>();
@@ -45,15 +47,18 @@ public class PlayerController : MonoBehaviour
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.FromToRotation(transform.up, hitInfo.normal) * transform.rotation, 0.15f);
             transform.position = new Vector3(this.transform.position.x, hitInfo.point.y + height, this.transform.position.z);
         }
-        MoveForward();
-        RotateTank();
+        if (!canonIsRotating)
+        {
+            MoveForward();
+            RotateTank();
+        }
         rotatingCanon = input.ShootInput;
     }
 
 
     void LateUpdate()
     {
-        if (rotatingCanon) rotateCanon();
+        if (!canonIsRotating && rotatingCanon) rotateCanon();
     }
     private void MoveForward()
     {
@@ -80,18 +85,31 @@ public class PlayerController : MonoBehaviour
             // Canon.transform.Rotate(0 , rotation, 0);
             if (Mathf.Abs(direction.x) >= 1 && Mathf.Abs(direction.z) > 1)
             {
-               Canon.transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(direction), canonRotationSpeed * Time.deltaTime);
-               // Canon.transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(direction), canonRotationSpeed * Time.deltaTime);
-                shoot();
+                StartCoroutine(RotateCanon(direction));
+                
+                //shoot();
             }
 
             Debug.Log(direction);
         }
-        rotatingCanon = false;
     }
 
     private void shoot()
     {
         Instantiate(Bomb, ShootingPoint.transform.position, Canon.transform.rotation);
     }
+
+    IEnumerator RotateCanon(Vector3 shootPos)
+    {
+        while (Quaternion.LookRotation(shootPos) != Canon.transform.rotation)
+        {
+            Canon.transform.rotation = Quaternion.Slerp(Canon.transform.rotation, Quaternion.LookRotation(shootPos), canonRotationSpeed * Time.deltaTime);
+            canonIsRotating = true;
+            yield return new WaitForEndOfFrame();
+        }
+
+        canonIsRotating = false;
+        yield return null;
+    }
+
 }
