@@ -126,6 +126,11 @@ public class PlayerController : MonoBehaviour
                 canonIsRotating = false;
                 yield return null;
             }
+            if (maxTimeToShoot >= 6)
+            {
+                canonIsRotating = false;
+                yield return null;
+            }
             yield return new WaitForEndOfFrame();
         }
         if (!alreadyShoot)

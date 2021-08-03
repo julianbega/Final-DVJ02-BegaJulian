@@ -48,7 +48,7 @@ public class UIManager : MonoBehaviour
         {
             backgroundPanel.gameObject.SetActive(false);
             endGamePanel.gameObject.SetActive(true);
-            endGameScore.text = "Score: " + player.GetScore();
+            endGameScore.text = "Score: \n" + player.GetScore();
             boxesDestroyed.text = "Boxes destroyed: " + player.GetBoxesDestroyed();
             distanceTraveled.text = "Distance traveled: " + player.GetDistanceTraveled() + " M";
         }
