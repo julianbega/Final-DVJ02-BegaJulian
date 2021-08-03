@@ -16,6 +16,12 @@ public class PlayerInputs : MonoBehaviour
         get { return rotationInput; }
     }
 
+    private bool shootInput;
+    public bool ShootInput
+    {
+        get { return shootInput; }
+    }
+
 
     void Update()
     {
@@ -26,5 +32,6 @@ public class PlayerInputs : MonoBehaviour
     {
         forwardInput = Input.GetAxisRaw("Vertical");
         rotationInput = Input.GetAxisRaw("Horizontal");
+        shootInput = Input.GetMouseButtonDown(0);
     }
 }

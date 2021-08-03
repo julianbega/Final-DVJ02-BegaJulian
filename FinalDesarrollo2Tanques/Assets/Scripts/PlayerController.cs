@@ -6,16 +6,21 @@ using UnityEngine;
 [RequireComponent(typeof(PlayerInputs))]
 public class PlayerController : MonoBehaviour
 {
-   // private Rigidbody playerRB;
+    private Terrain terrain;
     private PlayerInputs input;
     [Header("Player speeds")]
     public float speed;
     public float rotationSpeed;
-
+    public float canonRotationSpeed;
+    [Header("No tocar")]
     public float height;
+    public bool rotatingCanon;
+
+    [Header("GameObjects")]
+    public GameObject Canon;
     void Start()
     {
-       // playerRB = GetComponent<Rigidbody>();
+        rotatingCanon = false;
         input = GetComponent<PlayerInputs>();
     }
 
@@ -44,7 +49,34 @@ public class PlayerController : MonoBehaviour
         transform.Rotate(0.0f, input.RotationInput* Time.deltaTime * rotationSpeed, 0.0f);
         // transform.rotation = Quaternion.Slerp(transform.rotation, new Quaternion(transform.rotation.x, input.RotationInput * Time.deltaTime * rotationSpeed, transform.rotation.z, transform.rotation.w), 1);
 
+        if (input.ShootInput)
+        {
+            rotatingCanon = true;
+        }
+
+    }
+    void LateUpdate()
+    {
+        if (rotatingCanon) rotateCanon();
     }
 
-
+    private void rotateCanon()
+    {
+        RaycastHit hit;
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        if (Physics.Raycast(ray, out hit, Mathf.Infinity))
+        {
+            Vector3 direction = hit.point - transform.position;
+            // float rotation = Vector3.Angle(this.transform.position, hit.point);
+            // Canon.transform.Rotate(0 , rotation, 0);
+           
+                if (Mathf.Abs(direction.x) >= 1 && Mathf.Abs(direction.z) > 1)
+                {
+                    Canon.transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(direction), canonRotationSpeed * Time.deltaTime);
+                }
+            
+            Debug.Log(direction);
+        }
+        rotatingCanon = false;
+    }
 }
