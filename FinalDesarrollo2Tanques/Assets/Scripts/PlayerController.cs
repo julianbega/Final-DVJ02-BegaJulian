@@ -78,10 +78,10 @@ public class PlayerController : MonoBehaviour
             Vector3 direction = hit.point - transform.position;
             // float rotation = Vector3.Angle(this.transform.position, hit.point);
             // Canon.transform.Rotate(0 , rotation, 0);
-
             if (Mathf.Abs(direction.x) >= 1 && Mathf.Abs(direction.z) > 1)
             {
-                Canon.transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(direction), canonRotationSpeed * Time.deltaTime);
+               Canon.transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(direction), canonRotationSpeed * Time.deltaTime);
+               // Canon.transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(direction), canonRotationSpeed * Time.deltaTime);
                 shoot();
             }
 
