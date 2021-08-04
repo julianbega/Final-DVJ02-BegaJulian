@@ -86,14 +86,29 @@ public class PlayerController : MonoBehaviour
             if (Mathf.Abs(direction.x) >= 1 && Mathf.Abs(direction.z) > 1)
             {
                 StartCoroutine(RotateCanon(direction));
-                
-                //shoot();
+                //StartCoroutine(RotateTower(hit));
             }
 
             Debug.Log(direction);
         }
     }
 
+    IEnumerator RotateTower(RaycastHit hit)
+    {
+        float timerAnim = 0;
+        float maxTimeAnim = 4;
+        while (timerAnim < maxTimeAnim)
+        {
+            timerAnim += Time.deltaTime;
+            Quaternion targetRotation = Quaternion.identity;
+            Vector3 targetDirection = (hit.point - Canon.transform.position).normalized;
+            targetRotation = Quaternion.LookRotation(targetDirection);
+            Canon.transform.rotation = Quaternion.SlerpUnclamped(Canon.transform.rotation, targetRotation, canonRotationSpeed);
+            yield return new WaitForEndOfFrame();
+        }
+        shoot();
+        yield return null;
+    }
     private void shoot()
     {
         Instantiate(Bomb, ShootingPoint.transform.position, Canon.transform.rotation);
@@ -124,12 +139,13 @@ public class PlayerController : MonoBehaviour
                 alreadyShoot = true;
                 shoot();
                 canonIsRotating = false;
-                yield return null;
+                break;
             }
             if (maxTimeToShoot >= 6)
             {
+                alreadyShoot = true;
                 canonIsRotating = false;
-                yield return null;
+                break;
             }
             yield return new WaitForEndOfFrame();
         }

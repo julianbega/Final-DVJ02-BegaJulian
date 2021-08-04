@@ -848,8 +848,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 786a9040ff6d49b4ea19c28a0760bac3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minutes: 2
-  seconds: 23.1
+  minutes: 1
+  seconds: 0
 --- !u!4 &1110714784
 Transform:
   m_ObjectHideFlags: 0
@@ -1398,6 +1398,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
+      - m_Target: {fileID: 1544490210}
+        m_MethodName: RestartTime
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1544490212
 MonoBehaviour:
   m_ObjectHideFlags: 0

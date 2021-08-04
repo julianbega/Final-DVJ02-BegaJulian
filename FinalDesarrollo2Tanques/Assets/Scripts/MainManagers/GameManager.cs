@@ -8,6 +8,9 @@ public class GameManager : MonoBehaviour
     public float minutes;
     [Range(0f, 59f)] public float seconds;
 
+    private float actualSeconds;
+    private float actualMinutes;
+
     public static GameManager instanceGameManager;
     public static GameManager Instance { get { return instanceGameManager; } }
 
@@ -29,6 +32,8 @@ public class GameManager : MonoBehaviour
     {
         endGame = false;
         DontDestroyOnLoad(this.gameObject);
+        actualSeconds = seconds;
+        actualMinutes = minutes;
     }
 
     void Update()
@@ -82,6 +87,11 @@ public class GameManager : MonoBehaviour
     public void SetEndGame(bool state)
     {
         endGame = state;
+    }
+    public void RestartTime()
+    {
+        actualSeconds = seconds;
+        actualMinutes = minutes;
     }
 
 }

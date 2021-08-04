@@ -53,7 +53,11 @@ public class ManagersReference : MonoBehaviour
     }
     public void RestartGame()
     {
-        referenceManager.SetEndGame(true);
+        referenceManager.SetEndGame(false);
+    }
+    public void RestartTime()
+    {
+        referenceManager.RestartTime();
     }
 
 }
