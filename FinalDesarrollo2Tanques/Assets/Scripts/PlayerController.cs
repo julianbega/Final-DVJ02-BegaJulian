@@ -81,8 +81,6 @@ public class PlayerController : MonoBehaviour
         if (Physics.Raycast(ray, out hit, Mathf.Infinity))
         {
             Vector3 direction = hit.point - transform.position;
-            // float rotation = Vector3.Angle(this.transform.position, hit.point);
-            // Canon.transform.Rotate(0 , rotation, 0);
             if (Mathf.Abs(direction.x) >= 1 && Mathf.Abs(direction.z) > 1)
             {
                 StartCoroutine(RotateCanon(direction));

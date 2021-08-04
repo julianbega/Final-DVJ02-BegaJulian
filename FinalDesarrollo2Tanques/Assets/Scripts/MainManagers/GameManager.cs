@@ -38,13 +38,13 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        seconds -= Time.deltaTime;
-        if (seconds <= 0)
+        actualSeconds -= Time.deltaTime;
+        if (actualSeconds <= 0)
         {
-            seconds = 60;
-            if (minutes >= 1)
+            actualSeconds = 60;
+            if (actualMinutes >= 1)
             {
-                minutes--;
+                actualMinutes--;
             }
             else
             {
@@ -70,11 +70,11 @@ public class GameManager : MonoBehaviour
 
     public float GetTimerMin()
     {
-        return minutes;
+        return actualMinutes;
     }
     public float GetTimerSec()
     {
-        return seconds;
+        return actualSeconds;
     }
     public bool GetIsPaused()
     {
